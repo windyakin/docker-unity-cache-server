@@ -1,0 +1,12 @@
+version: '3'
+
+volumes:
+  unity_cache: {}
+
+services:
+  cache_server:
+    image: windyakin/docker-unity-cache-server:latest
+    ports:
+      - 8125-8126:8125-8126
+    volumes:
+      - unity_cache:/srv/unity
