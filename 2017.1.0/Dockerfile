@@ -1,8 +1,8 @@
 FROM node:6-alpine
 
 # https://download.unity3d.com/download_unity/472613c02cf7/CacheServer-2017.1.0f3.zip
-ARG UNITY_VERSION=2017.3.1f1
-ARG VERSION_HASH=fc1d3344e6ea
+ARG UNITY_VERSION=2017.1.0f1
+ARG VERSION_HASH=472613c02cf7
 
 LABEL org.label-schema.version=${UNITY_VERSION}
 
