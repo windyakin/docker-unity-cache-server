@@ -9,7 +9,7 @@ LABEL org.label-schema.version=${UNITY_VERSION}
 RUN apk add --no-cache --virtual build-dependencies \
     curl \
     unzip \
-  && curl https://netstorage.unity3d.com/unity/${VERSION_HASH}/CacheServer-${UNITY_VERSION}.zip -o /tmp/cache_server.zip \
+  && curl https://download.unity3d.com/download_unity/${VERSION_HASH}/CacheServer-${UNITY_VERSION}.zip -o /tmp/cache_server.zip \
   && unzip -j -d /srv /tmp/cache_server.zip \
     CacheServer/CacheServer.js \
     CacheServer/LegacyCacheServer.js \
