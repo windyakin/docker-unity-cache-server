@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-ARG CACHE_SERVER_VERSION=6.0.0
+ARG CACHE_SERVER_VERSION=6.1.0
 
 LABEL org.label-schema.version=${CACHE_SERVER_VERSION}
 
