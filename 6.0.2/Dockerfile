@@ -4,11 +4,7 @@ ARG CACHE_SERVER_VERSION=6.1.2
 
 LABEL org.label-schema.version=${CACHE_SERVER_VERSION}
 
-RUN apk add --no-cache --virtual build-dependencies \
-    wget \
-  && wget -q https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 -O /usr/local/bin/dumb-init \
-  && chmod +x /usr/local/bin/dumb-init \
-  && apk del --purge build-dependencies
+RUN apk add --no-cache dumb-init
 
 WORKDIR /srv/unity
 
