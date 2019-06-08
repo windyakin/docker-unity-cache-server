@@ -32,7 +32,7 @@ Recommend volume setting position is `/srv/unity/cache`.
 | `CACHE_PATH`  | `--cache-path` | Cache files position in container | `/srv/unity/cache` |
 | `LOG_LEVEL`   | `--log-level`  | Output log level                  | `3` (info)         |
 
-### Using only for `unity-cache-server-cleanup`
+#### Using only for `unity-cache-server-cleanup`
 
 |   Variable name    |       Command        |              Description               |      Default value      |
 | ------------------ | -------------------- | -------------------------------------- | ----------------------- |
