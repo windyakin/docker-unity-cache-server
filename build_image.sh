@@ -2,7 +2,7 @@
 
 IMAGE_NAME=windyakin/docker-unity-cache-server
 VERSIONS=$(cat << EOS
-$(find -maxdepth 1 -type d | grep -E "^\./[0-9\.]+$" | sed -e "s/\.\///g" | sort)
+$(find -maxdepth 1 -type d | grep -E "^\./[0-9\.]+(\-[a-zA-Z0-9]+)?$" | sed -e "s/\.\///g" | sort)
 latest
 EOS
 )
