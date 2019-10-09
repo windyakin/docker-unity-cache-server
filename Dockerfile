@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:12-alpine
 
 ARG CACHE_SERVER_VERSION=6.3.0
 
