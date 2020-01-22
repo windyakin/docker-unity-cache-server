@@ -1,0 +1,22 @@
+name: Publish to Docker Hub
+
+on:
+  push:
+   branches:
+     - master
+  schedule:
+    # NOTE: Every 00:00 JST
+    - cron: '0 9 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Publish to Docker Hub
+        env:
+          DOCKER_PUSH: true
+          DOCKER_USERNAME: windyakin
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: ./.github/workflows/build_docker_image.sh
