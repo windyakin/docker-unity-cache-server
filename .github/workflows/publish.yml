@@ -16,6 +16,7 @@ jobs:
 
       - name: Publish to Docker Hub
         env:
+          DOCKER_PUSH: true
           DOCKER_USERNAME: windyakin
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: ./.github/workflows/build_docker_image.sh
