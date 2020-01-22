@@ -11,7 +11,7 @@ if [ "$@" = "unity-cache-server" ] || [ -z "$@" ]; then
       --daemon "${DAEMON_INTERVAL:-86400}" & \
   dumb-init -- \
     unity-cache-server \
-      --cache-path "${CACHE_PATH:-"/srv/unity/cache"}"
+      --cache-path "${CACHE_PATH:-"/srv/unity/cache"}" \
       --log-level "${LOG_LEVEL:-3}"
 else
   exec $@
