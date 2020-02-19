@@ -6,6 +6,10 @@
 
 ## Available on Docker Hub 🐳
 
+![](https://images.microbadger.com/badges/image/windyakin/docker-unity-cache-server.svg)
+![](https://github.com/windyakin/docker-unity-cache-server/workflows/Publish%20to%20Docker%20Hub/badge.svg?branch=master)
+![](https://img.shields.io/docker/pulls/windyakin/docker-unity-cache-server?label=Docker%20pulls&logo=docker&logoColor=white)
+
 * [windyakin/docker-unity-cache-server](https://hub.docker.com/r/windyakin/docker-unity-cache-server)
   * [Supported version tags](https://hub.docker.com/r/windyakin/docker-unity-cache-server/tags/)
 
