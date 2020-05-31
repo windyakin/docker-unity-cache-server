@@ -4,6 +4,8 @@
 
 [Unity-Technologies/unity-cache-server](https://github.com/Unity-Technologies/unity-cache-server) on Docker container. **Supporting versions later than 6.x**
 
+It is recommended to use [Accelarator](https://blogs.unity3d.com/2019/09/11/speed-up-your-team-with-the-unity-accelerator/) in Unity version 2019.3 and later. That Docker image is [provided by Unity Technologies](https://hub.docker.com/r/unitytechnologies/accelerator).
+
 ## Available on Docker Hub 🐳
 
 ![](https://images.microbadger.com/badges/image/windyakin/docker-unity-cache-server.svg)
