@@ -5,7 +5,7 @@ volumes:
 
 services:
   cache_server:
-    image: windyakin/docker-unity-cache-server:latest
+    image: ghcr.io/windyakin/docker-unity-cache-server:latest
     ports:
       - 8126:8126
     volumes:

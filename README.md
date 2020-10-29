@@ -6,21 +6,21 @@
 
 It is recommended to use [Accelarator](https://blogs.unity3d.com/2019/09/11/speed-up-your-team-with-the-unity-accelerator/) in Unity version 2019.3 and later. That Docker image is [provided by Unity Technologies](https://hub.docker.com/r/unitytechnologies/accelerator).
 
-## Available on Docker Hub 🐳
+## Available on GitHub Container Registry and Docker Hub 🐳
 
 ![](https://images.microbadger.com/badges/image/windyakin/docker-unity-cache-server.svg)
 ![](https://github.com/windyakin/docker-unity-cache-server/workflows/Publish%20to%20Docker%20Hub/badge.svg?branch=master)
 ![](https://img.shields.io/docker/pulls/windyakin/docker-unity-cache-server?label=Docker%20pulls&logo=docker&logoColor=white)
 
+* [ghcr.io/windyakin/docker-unity-cache-server](https://github.com/users/windyakin/packages/container/package/docker-unity-cache-server)
 * [windyakin/docker-unity-cache-server](https://hub.docker.com/r/windyakin/docker-unity-cache-server)
-  * [Supported version tags](https://hub.docker.com/r/windyakin/docker-unity-cache-server/tags/)
 
 ## Usage
 
 ### Start server
 
 ```sh
-docker run -d -p 8126:8126 -v $(pwd):/srv/unity/cache --name unity-cache-server windyakin/docker-unity-cache-server
+docker run -d -p 8126:8126 -v $(pwd):/srv/unity/cache --name unity-cache-server ghcr.io/windyakin/docker-unity-cache-server
 ```
 
 [Sample docker-compose.yml](docker-compose.yml)
