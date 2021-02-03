@@ -5,8 +5,9 @@ on:
    branches:
      - master
   schedule:
-    # NOTE: Every 18:00 JST
-    - cron: '0 9 * * *'
+    # NOTE: Weekly
+    - cron: '0 9 * * 0'
+  workflow_dispatch:
 
 jobs:
   publish:
